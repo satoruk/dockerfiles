@@ -1,0 +1,21 @@
+{
+  "name": "dockerfiles",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:satoruk/dockerfiles.git",
+  "author": "satoruk <koyanagi3106@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "lint:branch": "branch-naming-check '(master|node-([^\\-]+)-([^\\-]+)(-(.+))?)'"
+  },
+  "husky": {
+    "hooks": {
+      "post-commit": "yarn lint:branch",
+      "pre-push": "yarn lint:branch"
+    }
+  },
+  "devDependencies": {
+    "@innocells/branch-naming-check": "1.0.0",
+    "husky": "3.0.4"
+  }
+}
