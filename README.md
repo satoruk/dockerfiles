@@ -1,6 +1,6 @@
-個人的な開発やCI等に利用しているDockerfileの管理リポジトリです.
+個人的な開発や CI 等に利用している Dockerfile の管理リポジトリです.
 
-[Docker Hubのautobuild](https://docs.docker.com/docker-hub/builds/)を利用しているためgit-tagに命名規則をつけています.
+[Docker Hub の autobuild](https://docs.docker.com/docker-hub/builds/)を利用しているため git-tag に命名規則をつけています.
 
 ## Setup
 
@@ -8,6 +8,7 @@
 git clone git@github.com:satoruk/dockerfiles.git
 cd dockerfiles
 yarn install
+yarn run info
 ```
 
 git の tag または branch の命名規則
@@ -26,7 +27,7 @@ git の tag または branch の命名規則
 
 - **`ENV`:** メインとなる環境名 (`-`を含まない文字)
 - **`ENV_VERSION`:** メインとなる環境のバージョン (`-`を含まない文字)
-- **`BASE_OS`:** ベースとなるOS（コードネーム） (`-`を含まない文字)
+- **`BASE_OS`:** ベースとなる OS（コードネーム） (`-`を含まない文字)
 - **`VARIANT`:** 追加情報があれば任意で指定
 
 ## Docker Hub

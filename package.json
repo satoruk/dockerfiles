@@ -6,6 +6,18 @@
   "author": "satoruk <koyanagi3106@gmail.com>",
   "license": "MIT",
   "scripts": {
+    "info": "npm-scripts-info",
+
+    "?tag:ls": "tag一覧",
+    "tag:ls": "git tag",
+
+    "?tag:ls:node": "prefix `node-` のタグ一覧",
+    "tag:ls:node": "git tag -l 'node-.*'",
+
+    "?tag:push": "タグをリモートにpush",
+    "tag:push": "git push --tags origin",
+
+    "?lint:branch": "ブランチ名のlint",
     "lint:branch": "branch-naming-check '(master|node-([^\\-]+)-([^\\-]+)(-(.+))?)'"
   },
   "husky": {
@@ -16,6 +28,7 @@
   },
   "devDependencies": {
     "@innocells/branch-naming-check": "1.0.0",
-    "husky": "3.0.4"
+    "husky": "3.0.4",
+    "npm-scripts-info": "0.3.9"
   }
 }
