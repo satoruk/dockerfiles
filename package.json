@@ -6,7 +6,7 @@
   "author": "satoruk <koyanagi3106@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "lint:branch": "branch-naming-check '(master|node-([^\\-]+)-([^\\-]+)(-(.+))?)'"
+    "lint:branch": "branch-naming-check '(master|node/([^\\-]+)-([^\\-]+)(-(.+))?)'"
   },
   "husky": {
     "hooks": {
